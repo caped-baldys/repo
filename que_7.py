@@ -9,8 +9,8 @@ try:
 
     list_a[index]
 
-except IndexError:
-    print('error Index')
+except IndexError as err:
+    print('array index incorrect:',err)
 
-except ValueError:
-    print('error Value')
+except ValueError as err:
+    print('input not integer: ',err)
